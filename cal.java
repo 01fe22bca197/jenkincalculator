@@ -1,5 +1,5 @@
 
-class Cal {
+class cal extends extendcal {
 
     float addition(float operand_1, float operand_2) {
         return (operand_1 + operand_2);
@@ -20,7 +20,7 @@ class Cal {
     public static void main(String[] args) {
         float operand_1 = 10;
         float operand_2 = 5;
-        Cal calc = new Cal();
+        cal calc = new cal();
         float add_result = calc.addition(operand_1, operand_2);
         System.out.println("Result of Addition is: " + add_result);
         float sub_result = calc.substraction(operand_1, operand_2);
@@ -29,5 +29,9 @@ class Cal {
         System.out.println("Result of Multiplication is: " + mul_result);
         float div_result = calc.division(operand_1, operand_2);
         System.out.println("Result of Division is: " + div_result);
+        float square_result = calc.square(operand_1);
+        System.out.println("Result of square is: " + square_result);
+        float cube_result = calc.cube(operand_1);
+        System.out.println("Result of cube is: " + cube_result);
     }
 }
